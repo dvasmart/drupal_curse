@@ -6,7 +6,7 @@ services:
       context: .
     container_name: apache
     volumes:
-      - ./:/var/www/html
+      - '.:/var/www/html'
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.apache.rule=Host(`localhost`)"
@@ -17,14 +17,12 @@ services:
     container_name: db
     restart: always
     volumes:
-      - ./mysql_db:/var/lib/mysql
+      - './mysql_db:/var/lib/mysql'
     environment:
-      # MYSQL_ROOT_PASSWORD: pass1
       MYSQL_DATABASE: todo_db
       MYSQL_USER: db_user
       MYSQL_PASSWORD: pass2
       MYSQL_ROOT_PASSWORD: ""
-      MYSQL_ALLOW_EMPTY_PASSWORD: yes
 
   phpmyadmin:
     image: phpmyadmin:5
