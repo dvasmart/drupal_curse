@@ -1,13 +1,11 @@
 <?php 
 
 	$title = $_POST['title'];
+	$user = $_POST["login"];
 
 	require 'db.php';
 
-    $sql = 'INSERT INTO list(title) VALUES(:title)';
-
-	$query = $pdo->prepare($sql);
-  
-	$query->execute(['title' => $title]);
+	$query = $pdo->prepare("INSERT INTO `list` (`title`, `user`) VALUES ('$title', '$user')");
+  	$query->execute();
 
     header('Location: index.php');
