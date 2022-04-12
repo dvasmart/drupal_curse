@@ -330,12 +330,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/propelorm/Propel2.git",
-                "reference": "28961189645c9632e3b520a32171b979cf3e2b56"
+                "reference": "cecbbc834ce41229900ab4a152ae79c8fe75bfca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propelorm/Propel2/zipball/28961189645c9632e3b520a32171b979cf3e2b56",
-                "reference": "28961189645c9632e3b520a32171b979cf3e2b56",
+                "url": "https://api.github.com/repos/propelorm/Propel2/zipball/cecbbc834ce41229900ab4a152ae79c8fe75bfca",
+                "reference": "cecbbc834ce41229900ab4a152ae79c8fe75bfca",
                 "shasum": ""
             },
             "require": {
@@ -398,7 +398,7 @@
                 "issues": "https://github.com/propelorm/Propel2/issues",
                 "source": "https://github.com/propelorm/Propel2/tree/master"
             },
-            "time": "2022-04-08T15:44:52+00:00"
+            "time": "2022-04-12T11:53:16+00:00"
         },
         {
             "name": "psr/container",

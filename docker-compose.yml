@@ -6,7 +6,7 @@ services:
       context: .
     container_name: apache
     volumes:
-      - '.:/var/www/html'
+      - './:/var/www/html'
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.apache.rule=Host(`localhost`)"
