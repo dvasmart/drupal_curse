@@ -1,11 +1,11 @@
 <?php 
 
-	$title = $_POST['title'];
-	$user = $_POST["login"];
+$title = $_POST['title'];
+$user = $_POST["login"];
 
-	require 'db.php';
+require 'db.php';
 
-	$query = $pdo->prepare("INSERT INTO `list` (`title`, `user`) VALUES ('$title', '$user')");
-  	$query->execute();
+$query = $pdo->prepare("INSERT INTO `list` (`title`, `user`) VALUES ('$title', '$user')");
+$query->execute();
 
-    header('Location: index.php');
+header('Location: index.php');
