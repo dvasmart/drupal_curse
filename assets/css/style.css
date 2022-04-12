@@ -1,0 +1,7 @@
+.list_items {
+    list-style-type: none;
+}
+
+/* .list_item + input:checked {
+    text-decoration: line-through #000;
+} */

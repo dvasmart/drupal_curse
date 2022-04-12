@@ -1,0 +1,20 @@
+{
+    "name": "vitalii_dronskiy/drupal_learning",
+    "description": "Test project for learning composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "VitaliiDronskiy\\DrupalLearning\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vitalii Dronskiy"
+        }
+    ],
+    "require": {
+        "propel/propel": "~2.0@dev",
+        "raiym/instagram-php-scraper": "^0.12.4",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
