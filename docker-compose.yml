@@ -37,7 +37,7 @@ services:
       - PMA_PORT=${PMA_PORT}
       - PMA_ARBITRARY=${PMA_ARBITRARY}
     labels:
-      - "traefik.http.routers.phpmyadmin.rule=Host(`pma.localhost`)"
+      - "traefik.http.routers.phpmyadmin.rule=Host(`${PMA_URL}`)"
       - "traefik.http.services.phpmyadmin.loadbalancer.server.port=80"
 
 
